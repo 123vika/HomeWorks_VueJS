@@ -1,7 +1,6 @@
 <template>
   <div class="calc">
     {{ message }}
-
     <div>
       <input type="number" placeholder="Operand 1" @focus="onFocus" v-model.number="operand1" key="operand1"/>
       <br>
@@ -15,6 +14,7 @@
         <button @click="divide(operand1, operand2)">/</button>
         <button v-on:click="pow(operand1, operand2)">*n</button>
       </div>
+      <br>
       <br>
       <button @click="doThan('hello', $event)">Click</button>
     </div>
